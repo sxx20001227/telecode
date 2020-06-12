@@ -94,7 +94,7 @@ function formatEMU(i) {
 
 function loadEMU(url) {
     msg = '<tr><td>-</td><td>-</td><td>{0}</td></tr>';
-    show([msg.format(['少女祈祷中…'])]);
+    show([msg.format(['加载中…'])]);
     $.getJSON(url).done(function(results) {
         if (results.length) {
             show(results.map(formatEMU));
